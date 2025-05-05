@@ -123,11 +123,11 @@ public class Exp3_S8_Felipe_Hidalgo {
         esReserva[cantidadEntradas] = false;
         tipoCliente[cantidadEntradas] = tipo;
         
-        // Debug
-        System.out.println("[DEBUG] Entrada registrada en índice: " + cantidadEntradas);
-        System.out.println("[DEBUG] Cliente: " + nombre);
-        System.out.println("[DEBUG] Ubicación: " + ubicacion);
-        System.out.println("[DEBUG] Tipo Cliente: " + tipo);
+        
+        System.out.println("[DEBUG] Entrada registrada en índice: " + cantidadEntradas); // Muestra el índice actual donde se está registrando la compra
+        System.out.println("[DEBUG] Cliente: " + nombre); // Muestra el nombre del cliente que compró
+        System.out.println("[DEBUG] Ubicación: " + ubicacion); // Muestra la ubicación seleccionada
+        System.out.println("[DEBUG] Tipo Cliente: " + tipo); // Muestra el tipo de cliente seleccionado
 
         System.out.println("Entrada vendida exitosamente.");
         imprimirBoleta(cantidadEntradas);
