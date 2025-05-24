@@ -15,114 +15,223 @@ public class Main {
     private static Cliente cliente = null;
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void mostrarMenu() {
         int opcion;
 
         do {
-            mostrarMenu();
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
-
-            switch (opcion) {
-                case 1 -> registrarCliente();
-                case 2 -> verDatosCliente();
-                case 3 -> realizarDeposito();
-                case 4 -> realizarGiro();
-                case 5 -> consultarSaldo();
-                case 6 -> System.out.println("Gracias por usar Bank Boston. ¡Hasta pronto!");
-                default -> System.out.println("Opción inválida. Intente nuevamente.");
+            System.out.println("=== Menú Bank Boston ===");
+            System.out.println("1. Registrar cliente");
+            System.out.println("2. Ver datos de cliente");
+            System.out.println("3. Depositar");
+            System.out.println("4. Girar");
+            System.out.println("5. Consultar saldo");
+            System.out.println("6. Salir");
+            System.out.print("Seleccione una opción: ");
+            
+            try {
+                opcion = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+            opcion = -1; // opción inválida
             }
 
-            System.out.println(); // Separación entre acciones
+            switch (opcion) {
+                case 1:
+                    registrarCliente();
+                    break;
+                case 2:
+                    verDatosCliente();
+                    break;
+                case 3:
+                    realizarDeposito();
+                    break;
+                case 4:
+                    realizarGiro();
+                    break;
+                case 5:
+                    consultarSaldo();
+                    break;
+                case 6:
+                    System.out.println("Gracias por usar Bank Boston. ¡Hasta pronto!");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Intente nuevamente.");
+            }
+
+            System.out.println(); // Separador visual
+
         } while (opcion != 6);
     }
 
-    private static void mostrarMenu() {
-        System.out.println("=== Menú Bank Boston ===");
-        System.out.println("1. Registrar cliente");
-        System.out.println("2. Ver datos de cliente");
-        System.out.println("3. Depositar");
-        System.out.println("4. Girar");
-        System.out.println("5. Consultar saldo");
-        System.out.println("6. Salir");
-        System.out.print("Seleccione una opción: ");
+    public static void main(String[] args) {
+        mostrarMenu();
     }
 
-    private static void registrarCliente() {
-        if (cliente != null) {
-            System.out.println("Ya hay un cliente registrado. Reinicie la aplicación para registrar otro.");
-            return;
+    public static void registrarCliente() {
+        String rut;
+        while (true) {
+            System.out.print("Ingrese RUT (formato XX.XXX.XXX-X, solo números): ");
+            rut = scanner.nextLine();
+
+            if (rut.contains(".") && rut.contains("-")) {
+                String[] partes = rut.split("-");
+                if (partes.length == 2) {
+                    String cuerpo = partes[0];
+                    String verificador = partes[1];
+
+                    if (cuerpo.matches("[0-9.]+") && verificador.matches("[0-9]")) {
+                        break;
+                    }
+                }
+            }
+
+            System.out.println("❌ RUT inválido. Debe tener formato XX.XXX.XXX-X y solo números.");
         }
 
-        System.out.print("Ingrese RUT con guión y puntos : ");
-        String rut = scanner.nextLine();
-        if (rut.length() < 11 || rut.length() > 12) {
-            System.out.println("RUT inválido. Debe tener entre 9 caracteres.");
-            return;
+        String nombre;
+        while (true) {
+            System.out.print("Ingrese nombre: ");
+            nombre = scanner.nextLine();
+
+            boolean contieneNumero = false;
+            for (int i = 0; i < nombre.length(); i++) {
+                char c = nombre.charAt(i);
+                if (c >= '0' && c <= '9') {
+                    contieneNumero = true;
+                    break;
+                }
+            }
+            if (!contieneNumero) break;
+            else System.out.println("❌ El nombre no debe contener números.");
         }
 
-        System.out.print("Nombre completo: ");
-        String nombre = scanner.nextLine();
-        System.out.print("Apellido Paterno: ");
-        String apellidoPaterno = scanner.nextLine();
-        System.out.print("Apellido Materno: ");
-        String apellidoMaterno = scanner.nextLine();
-        System.out.print("Domicilio: ");
-        String domicilio = scanner.nextLine();
-        System.out.print("Comuna: ");
-        String comuna = scanner.nextLine();
-        System.out.print("Teléfono: ");
-        String telefono = scanner.nextLine();
-        System.out.print("Número de cuenta (9 dígitos): ");
+        String apellidoPaterno;
+        while (true) {
+            System.out.print("Ingrese apellido paterno: ");
+            apellidoPaterno = scanner.nextLine();
+
+            boolean contieneNumero = false;
+            for (int i = 0; i < apellidoPaterno.length(); i++) {
+                char c = apellidoPaterno.charAt(i);
+                if (c >= '0' && c <= '9') {
+                    contieneNumero = true;
+                    break;
+                }
+            }
+            if (!contieneNumero) break;
+            else System.out.println("❌ El apellido no debe contener números.");
+        }
+
+        String apellidoMaterno;
+        while (true) {
+            System.out.print("Ingrese apellido materno: ");
+            apellidoMaterno = scanner.nextLine();
+
+            boolean contieneNumero = false;
+            for (int i = 0; i < apellidoMaterno.length(); i++) {
+                char c = apellidoMaterno.charAt(i);
+                if (c >= '0' && c <= '9') {
+                    contieneNumero = true;
+                    break;
+                }
+            }
+            if (!contieneNumero) break;
+            else System.out.println("❌ El apellido no debe contener números.");
+        }
+
+        String domicilio;
+        while (true) {
+            System.out.print("Ingrese domicilio: ");
+            domicilio = scanner.nextLine();
+
+            boolean contieneNumero = false;
+            for (int i = 0; i < domicilio.length(); i++) {
+                char c = domicilio.charAt(i);
+                if (c >= '0' && c <= '9') {
+                    contieneNumero = true;
+                    break;
+                }
+            }
+            if (!contieneNumero) break;
+            else System.out.println("❌ El domicilio no debe contener números.");
+        }
+
+        String comuna;
+        while (true) {
+            System.out.print("Ingrese comuna: ");
+            comuna = scanner.nextLine();
+
+            boolean contieneNumero = false;
+            for (int i = 0; i < comuna.length(); i++) {
+                char c = comuna.charAt(i);
+                if (c >= '0' && c <= '9') {
+                    contieneNumero = true;
+                    break;
+                }
+            }
+            if (!contieneNumero) break;
+            else System.out.println("❌ La comuna no debe contener números.");
+        }
+
+        String telefono;
+        while (true) {
+            System.out.print("Ingrese teléfono (9 dígitos): ");
+            telefono = scanner.nextLine();
+            if (telefono.length() == 9) {
+                boolean soloNumeros = true;
+                for (int i = 0; i < telefono.length(); i++) {
+                    if (telefono.charAt(i) < '0' || telefono.charAt(i) > '9') {
+                        soloNumeros = false;
+                        break;
+                    }
+                }
+                if (soloNumeros) break;
+            }
+            System.out.println("Número inválido. Debe tener 9 dígitos numéricos.");
+        }
+
+        System.out.print("Ingrese número de cuenta: ");
         String numeroCuenta = scanner.nextLine();
 
-        if (numeroCuenta.length() != 9 || !numeroCuenta.matches("\\d+")) {
-            System.out.println("Número de cuenta inválido.");
-            return;
-        }
-
-        cliente = new Cliente(rut, nombre, apellidoPaterno, apellidoMaterno,
-                domicilio, comuna, telefono, numeroCuenta);
-        System.out.println("Cliente registrado exitosamente.");
+        cliente = new Cliente(rut, nombre, apellidoPaterno, apellidoMaterno, domicilio, comuna, telefono, numeroCuenta);
+        System.out.println("Cliente registrado con éxito.");
     }
 
-    private static void verDatosCliente() {
+    public static void verDatosCliente() {
         if (cliente == null) {
             System.out.println("No hay cliente registrado.");
-            return;
+        } else {
+            cliente.mostrarDatos();
         }
-
-        cliente.mostrarDatos();
     }
 
-    private static void realizarDeposito() {
+    public static void realizarDeposito() {
         if (cliente == null) {
-            System.out.println("Debe registrar un cliente antes de hacer depósitos.");
-            return;
+            System.out.println("Debe registrar un cliente primero.");
+        } else {
+            System.out.print("Ingrese monto a depositar: ");
+            int monto = scanner.nextInt();
+            scanner.nextLine();
+            cliente.getCuenta().depositar(monto);
         }
-
-        System.out.print("Ingrese monto a depositar: ");
-        int monto = scanner.nextInt();
-        cliente.getCuenta().depositar(monto);
     }
 
-    private static void realizarGiro() {
+    public static void realizarGiro() {
         if (cliente == null) {
-            System.out.println("Debe registrar un cliente antes de hacer giros.");
-            return;
+            System.out.println("Debe registrar un cliente primero.");
+        } else {
+            System.out.print("Ingrese monto a girar: ");
+            int monto = scanner.nextInt();
+            scanner.nextLine();
+            cliente.getCuenta().girar(monto);
         }
-
-        System.out.print("Ingrese monto a girar: ");
-        int monto = scanner.nextInt();
-        cliente.getCuenta().girar(monto);
     }
 
-    private static void consultarSaldo() {
+    public static void consultarSaldo() {
         if (cliente == null) {
-            System.out.println("Debe registrar un cliente antes de consultar saldo.");
-            return;
+            System.out.println("Debe registrar un cliente primero.");
+        } else {
+            int saldo = cliente.getCuenta().getSaldo();
+            System.out.println("Saldo actual: $" + saldo);
         }
-
-        System.out.println("Saldo actual: $" + cliente.getCuenta().getSaldo());
     }
 }
