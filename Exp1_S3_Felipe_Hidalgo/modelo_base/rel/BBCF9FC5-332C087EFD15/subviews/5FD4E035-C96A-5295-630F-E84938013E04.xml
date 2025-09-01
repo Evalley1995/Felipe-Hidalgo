@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_2" id="5FD4E035-C96A-5295-630F-E84938013E04">
+<createdBy>pipe-</createdBy>
+<modifiedBy>pipe-</modifiedBy>
+<createdTime>2025-09-01 02:49:54 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>11B3B7CE-E16A-D2C9-79DD-FF1F606274AD</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1D6F44C2-8182-6C40-D562-DDDC6B7C4CA8" otype="Table" vid="91BB7C9E-B1CF-DCEC-0F15-6904B528C5FF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="46" y="34" width="266" height="203"/>
+<generatorID>091BAAD0-4513-E384-1341-459A297787A0</generatorID>
+</OView>
+</objectViews>
+</Diagram>

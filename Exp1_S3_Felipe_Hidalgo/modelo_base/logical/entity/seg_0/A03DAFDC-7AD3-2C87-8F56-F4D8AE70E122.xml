@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A03DAFDC-7AD3-2C87-8F56-F4D8AE70E122" name="RESIDENCIA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 02:13:55 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_residencia" id="E992041D-957C-DA93-2310-9B7684CF2E94">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 02:16:43 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="0EDA60B8-A745-E25F-B24B-0AD97B44B6E3">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 02:16:44 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comuna" id="CF6772E4-E088-0C69-421D-063F1B75C017">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 02:16:44 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6D2E56E-ABC3-74B8-94C4-C363003CA1A9" name="RESIDENCIA PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 02:21:54 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E992041D-957C-DA93-2310-9B7684CF2E94</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

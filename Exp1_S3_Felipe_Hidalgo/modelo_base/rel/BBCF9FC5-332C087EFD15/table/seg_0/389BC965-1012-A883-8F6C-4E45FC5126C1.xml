@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="389BC965-1012-A883-8F6C-4E45FC5126C1" name="ANEXO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>654C3DD2-8FB2-C0A5-4E8B-22FBDEC48E9F</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_anexo" id="09D89455-9735-736D-07AA-B8E98F039253">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>25FE9ADD-9791-BD03-8F37-8525DEEA4B83</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="B32B3FB8-938A-5663-F94D-3E4794F5A2AF">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>7EB80443-F639-1AFB-2D88-E7B6AECE995E</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_termino" id="1676A8EF-07F5-B14D-8D02-9242935D5812">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>661CF471-63F2-500E-4D83-B480AA8A5179</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="64C3257D-FBAF-F1E5-3840-EDD710415452">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>464D1459-06D1-7848-0729-E02C621F395C</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_residente" id="29CE5B5C-94A7-6B5F-3CCA-87EEA6F3E067">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>3F44A931-7E60-BFCA-C464-09320BDB145C</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_contrato" id="A83DC92B-7698-C50C-05D1-31056AFD6B38">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>C76C6981-0D92-A6B0-00FC-B5BDE9A3EFBD</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESIDENTE_rut_residente" id="FCE80C89-76D1-3F0C-6D37-36F160D6E712">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>86F9DDF1-1633-58F2-6D22-5461768744F6</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9440B9A-927F-4406-8B7A-DBB3AE056118" referredColumn="CE715193-C50E-3D94-C39C-7787AB3D8CB3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F962AAA5-8D26-9D69-F3D7-E58E6E021E7A" name="ANEXO_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>5D01540B-A7A7-2186-10F9-FBD73B6B152A</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09D89455-9735-736D-07AA-B8E98F039253"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEB66E40-1239-138B-7F96-37EF8158C748" name="ANEXO_RESIDENTE_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>A610BFBB-61BF-F2FE-45AB-4A97623BB382</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCE80C89-76D1-3F0C-6D37-36F160D6E712"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

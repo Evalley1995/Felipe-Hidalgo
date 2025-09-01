@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="654C3DD2-8FB2-C0A5-4E8B-22FBDEC48E9F" name="ANEXO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:31:58 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_anexo" id="25FE9ADD-9791-BD03-8F37-8525DEEA4B83">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:32:05 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="7EB80443-F639-1AFB-2D88-E7B6AECE995E">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:32:05 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_termino" id="661CF471-63F2-500E-4D83-B480AA8A5179">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:32:05 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observaciones" id="464D1459-06D1-7848-0729-E02C621F395C">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:32:05 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_residente" id="E08D1A00-C471-82AA-A0EF-A848C5468ED1">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 06:37:25 UTC</createdTime>
+<generatorID>6F2239C3-1A73-82F8-8F95-FB8A9D4BE730</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<referedAttribute>775A179B-9273-7893-1C29-4FDDE112F636</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_contrato" id="F61CB870-4231-10DD-B49E-5528C89D0396">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 06:38:52 UTC</createdTime>
+<generatorID>3B4635F5-B861-6781-24DA-6AF76492122B</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<referedAttribute>A520A24B-BCE5-15E6-F0C0-0DA3C41F615D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_apoderado" id="E60616A5-02CF-A815-099F-2DCC5C1FCF52">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 06:42:35 UTC</createdTime>
+<generatorID>3B4635F5-B861-6781-24DA-6AF76492122B</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<referedAttribute>EEDD8471-CFE4-EEDF-0227-0D40CE96338C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D01540B-A7A7-2186-10F9-FBD73B6B152A" name="ANEXO PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:55:09 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25FE9ADD-9791-BD03-8F37-8525DEEA4B83</attributeRef>
+<attributeRef>F61CB870-4231-10DD-B49E-5528C89D0396</attributeRef>
+<attributeRef>E60616A5-02CF-A815-099F-2DCC5C1FCF52</attributeRef>
+<attributeRef>E08D1A00-C471-82AA-A0EF-A848C5468ED1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

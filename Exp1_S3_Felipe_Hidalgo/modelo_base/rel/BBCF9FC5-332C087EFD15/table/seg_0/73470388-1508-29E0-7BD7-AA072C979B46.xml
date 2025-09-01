@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73470388-1508-29E0-7BD7-AA072C979B46" name="RESIDENTE_PERMANENTE">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>18C57AC3-E7D3-380E-7386-01E0DBA609EC</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_residente" id="EE35F022-EDB3-001D-070E-FD9AD85BA0DC">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>6A43E7C7-E8C2-BDC2-0A5E-29A8CF5D4064</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="historial_clinico" id="DB3369D9-75F0-D4AC-517E-BDCB9121086B">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>EF4321F9-0CE5-21C0-843F-61532003C5AC</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FB44078-FBDF-D9B3-5990-F7C0FCDB8FCF" name="RESIDENTE_PERMANENTE_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>C881E539-73F1-592B-FDED-99048E943DEE</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE35F022-EDB3-001D-070E-FD9AD85BA0DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

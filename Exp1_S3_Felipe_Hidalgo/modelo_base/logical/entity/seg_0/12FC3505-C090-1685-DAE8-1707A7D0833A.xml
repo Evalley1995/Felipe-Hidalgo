@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12FC3505-C090-1685-DAE8-1707A7D0833A" name="CONTRATO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:03 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contrato" id="A520A24B-BCE5-15E6-F0C0-0DA3C41F615D">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:19 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_inicio" id="F422AEA5-2132-6B6B-0F62-1900729E7239">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:19 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_termino" id="DA5A5BEC-79F2-2B77-4A16-A05ED8F8754F">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:19 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_financiamiento" id="BC21651B-2412-6B79-F51C-C082B3960BA8">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:19 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_apoderado" id="EEDD8471-CFE4-EEDF-0227-0D40CE96338C">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 06:42:35 UTC</createdTime>
+<generatorID>8234A30D-ABCC-2309-841D-8F9FCA16C839</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<referedAttribute>CFADB52E-2793-0C16-B4E4-461C5404BD97</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A641732-C47F-C773-73BB-C33194149B73" name="CONTRATO PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 04:21:44 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A520A24B-BCE5-15E6-F0C0-0DA3C41F615D</attributeRef>
+<attributeRef>EEDD8471-CFE4-EEDF-0227-0D40CE96338C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

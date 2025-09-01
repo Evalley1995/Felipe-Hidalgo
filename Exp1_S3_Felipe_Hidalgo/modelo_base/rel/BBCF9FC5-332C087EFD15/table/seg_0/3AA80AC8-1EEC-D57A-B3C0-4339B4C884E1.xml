@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3AA80AC8-1EEC-D57A-B3C0-4339B4C884E1" name="HABITACION">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 03:50:51 UTC</createdTime>
+<generatorID>204EDC09-3C95-C91B-BE18-BB552383F413</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_habitacion" id="94A293B3-78D8-7C3F-3269-CD1A36BFF8B8">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 03:50:51 UTC</createdTime>
+<generatorID>ADE8E406-7D82-8CD4-3EE3-4F364E83F8B4</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="2B6F11A2-7606-7B71-6DA9-1A173D3CF297">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 03:50:51 UTC</createdTime>
+<generatorID>3E36FBE5-3C25-9322-7F72-71E6948E3085</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_residencia" id="CD669F55-D583-15E5-60E8-0A5C95C81343">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 03:50:51 UTC</createdTime>
+<generatorID>18DBD882-254A-86FB-7A44-273B3A79357E</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESIDENCIA_id_residencia" id="034D81BE-2AAA-BB81-0903-5FFD6057C82D">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>96C11A47-EE9B-5E2C-5D6F-BEF05CA45A53</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C529E83B-A77B-2C1A-40AA-AD00A7001069" referredColumn="948A5503-CAC1-0369-EC2A-8DCD722DF6BB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A78EC3B-CE54-9383-E68E-0056699BCC57" name="HABITACION_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 03:50:51 UTC</createdTime>
+<generatorID>1B422CDF-5575-100F-7828-E8FC274F633C</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94A293B3-78D8-7C3F-3269-CD1A36BFF8B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13B9FB4B-0871-F23D-7970-D0CDD89DD34F" name="HABITACION_RESIDENCIA_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>FA32B844-861F-20EE-62A8-86690A404AB7</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="034D81BE-2AAA-BB81-0903-5FFD6057C82D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

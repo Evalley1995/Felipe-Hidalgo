@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BE2E5B1-C90F-E6D0-3062-2B1ECD3A5D17" name="CUIDADOR">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>065F19EF-0A60-2C25-44AF-01AE38DA188A</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_personal_1" id="FD9D67D5-0390-3A07-C9BC-7CD3A92CF270">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>EDCB6CD9-077D-C58A-DE98-56014AA5A69F</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ficha_cuidador" id="D0E2354D-932D-9E67-FB41-7E341DDE6B0A">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>8977C5E6-EB85-3670-AB71-1F606F36483F</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12255</dataTypeSize>
+<ownDataTypeParameters>12255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_personal" id="8F5A7602-C903-D541-1A9B-C28270E15EDE">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>6ADA2162-5ACF-1FF4-D7E6-77EC9958887D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="395C3E95-44E2-3B03-ACCC-6B310C42D8B6" referredColumn="BB844AAA-7E82-9D59-F945-A5C233C74508"/>
+<colAssociation fkAssociation="33793B83-C8F7-2FFB-3FFE-5C767BF09BB9" referredColumn="BB844AAA-7E82-9D59-F945-A5C233C74508"/>
+</associations>
+</Column>
+<Column name="PERSONAL_rut_personal" id="01466E40-5DE5-B1B2-D0BA-6E226CCF701B">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>F64AFE64-D091-CD4C-633F-24CDF8FFDC56</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="051629E3-3412-0CC8-A68B-591049C69AE2" referredColumn="BB844AAA-7E82-9D59-F945-A5C233C74508"/>
+</associations>
+</Column>
+<Column name="PERSONAL_rut_personal" id="DBB0AA77-7ACF-57BC-54BA-6A370F9CDA12">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:36 UTC</createdTime>
+<generatorID>F64AFE64-D091-CD4C-633F-24CDF8FFDC56</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D589ED6-A349-3CE9-2BA0-9305C519A1A8" referredColumn="BB844AAA-7E82-9D59-F945-A5C233C74508"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C75B0888-8F53-A23B-EB42-92BE5CD8BA08" name="CUIDADOR_PKv1">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>0E24448D-4382-3C33-49E0-86E98829ADDF</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F5A7602-C903-D541-1A9B-C28270E15EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5483624-0D71-7996-D774-33588F519312" name="CUIDADOR_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>50E57C37-E503-5E19-F852-C0A6DDC13267</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD9D67D5-0390-3A07-C9BC-7CD3A92CF270"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A523B75-8583-A7D7-34E1-D865CFA19928" name="CUIDADOR__IDXv1">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:36 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>10477150-407E-39AA-3F30-BF6426E53F3D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DBB0AA77-7ACF-57BC-54BA-6A370F9CDA12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61578416-C671-6263-F86B-0EF68410E918" name="CUIDADOR_PERSONAL_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>4C2DFAFC-8A6E-C13C-9CFA-9B436CF81B46</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F5A7602-C903-D541-1A9B-C28270E15EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA5A55A5-81F3-A366-55EA-051E559F9BE8" name="CUIDADOR_PERSONAL_FKv2">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>10477150-407E-39AA-3F30-BF6426E53F3D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01466E40-5DE5-B1B2-D0BA-6E226CCF701B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDD32309-6457-0571-C5DB-674B2A59D729" name="CUIDADOR_PERSONAL_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:36 UTC</createdTime>
+<generatorID>4C2DFAFC-8A6E-C13C-9CFA-9B436CF81B46</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F5A7602-C903-D541-1A9B-C28270E15EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01553E90-BD0A-5A8E-D61A-ACF1F9A5FF4B" name="CUIDADOR_PERSONAL_FKv2">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:36 UTC</createdTime>
+<generatorID>10477150-407E-39AA-3F30-BF6426E53F3D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB0AA77-7ACF-57BC-54BA-6A370F9CDA12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

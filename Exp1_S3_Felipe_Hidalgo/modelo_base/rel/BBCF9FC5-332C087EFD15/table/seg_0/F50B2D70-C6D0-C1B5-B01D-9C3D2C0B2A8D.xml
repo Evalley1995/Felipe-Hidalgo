@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F50B2D70-C6D0-C1B5-B01D-9C3D2C0B2A8D" name="APODERADO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>D254CACA-B911-7588-53A1-67CCB125E5E2</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_apoderado" id="1E0B9076-36BA-1D1E-C491-08D73B7E6969">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>CFADB52E-2793-0C16-B4E4-461C5404BD97</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="6386DB94-2172-4DA7-A55C-E76D02144B7F">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>C6987E17-5160-2C99-F93F-E51964230AA0</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contacto" id="5523F133-612C-5711-9683-09EF17D5D2AB">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>FB99D70E-B91D-9CAB-E78B-E078B70CF434</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="625050AB-891A-6FF2-22EB-56E173E065D3" name="APODERADO_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>3095B4EA-48FB-BE2A-B533-E966639ED617</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E0B9076-36BA-1D1E-C491-08D73B7E6969"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

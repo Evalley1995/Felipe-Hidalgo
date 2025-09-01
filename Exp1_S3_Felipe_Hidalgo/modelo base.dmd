@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo base" id="30E81328-5305-DA17-0441-310D752AFCCF" version="3.5">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 00:26:27 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>30E81328-5305-DA17-0441-310D752AFCCF</designId>
+</OSDM_Design>

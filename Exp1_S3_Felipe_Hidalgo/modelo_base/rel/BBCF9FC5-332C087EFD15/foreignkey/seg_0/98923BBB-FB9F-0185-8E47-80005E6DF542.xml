@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="98923BBB-FB9F-0185-8E47-80005E6DF542" containerWithKeyObject="C97AED98-984D-B459-FD8D-8B080912F32E" localFKIndex="DA610904-E2DB-0C9A-FF6B-3D2466DBAB9D" name="CONTRATO_APODERADO_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>24737457-1E40-7233-39C7-AFF5C48E35E3</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<referredTableLongName>APODERADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F50B2D70-C6D0-C1B5-B01D-9C3D2C0B2A8D</referredTableID>
+<keyObject>625050AB-891A-6FF2-22EB-56E173E065D3</keyObject>
+<referredKeyID>625050AB-891A-6FF2-22EB-56E173E065D3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_apoderado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

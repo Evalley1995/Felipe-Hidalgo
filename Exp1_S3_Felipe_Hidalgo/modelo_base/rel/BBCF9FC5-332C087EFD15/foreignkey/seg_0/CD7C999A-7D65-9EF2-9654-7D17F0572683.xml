@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD7C999A-7D65-9EF2-9654-7D17F0572683" containerWithKeyObject="B4A6CB91-300E-8A53-A1DD-5F94765F7EB0" localFKIndex="B0C02A3F-1743-F16F-9CC6-1B8EC4A1E1E7" name="PERSONAL_CUIDADOR_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:47 UTC</createdTime>
+<generatorID>10477150-407E-39AA-3F30-BF6426E53F3D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<referredTableLongName>CUIDADOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9BE2E5B1-C90F-E6D0-3062-2B1ECD3A5D17</referredTableID>
+<keyObject>E5483624-0D71-7996-D774-33588F519312</keyObject>
+<referredKeyID>E5483624-0D71-7996-D774-33588F519312</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_personal_1</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

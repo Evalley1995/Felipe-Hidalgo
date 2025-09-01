@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="242D1475-FB92-B2A4-FC88-ADDBBE1DFAF0" name="PERSONAL">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:04:11 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_personal" id="6ADA2162-5ACF-1FF4-D7E6-77EC9958887D">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:04:28 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="FBF77235-0857-2E6A-6086-921F64123DD9">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:04:29 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="E13BCFFA-D52E-76E7-EE9B-0D53E921B30F">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:04:29 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_residencia" id="C3DCB26B-E389-7623-DC5D-A6EFCABEF7B8">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:04:29 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_residencia1" id="1696E661-535C-1BF9-82CF-53A34C67EB69">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 06:03:06 UTC</createdTime>
+<generatorID>79C84052-F01A-7FB5-AED0-17E20F36C028</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="true"/>
+</engineerTo>
+<referedAttribute>E992041D-957C-DA93-2310-9B7684CF2E94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E24448D-4382-3C33-49E0-86E98829ADDF" name="PERSONAL PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:05:00 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BBCF9FC5-3C84-B9CA-7176-332C087EFD15" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6ADA2162-5ACF-1FF4-D7E6-77EC9958887D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

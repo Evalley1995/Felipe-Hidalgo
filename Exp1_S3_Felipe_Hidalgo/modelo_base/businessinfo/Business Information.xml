@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="F6DF2EB2-06EA-6610-72AC-53709F512FF2">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 00:26:27 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

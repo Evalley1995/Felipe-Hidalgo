@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C97AED98-984D-B459-FD8D-8B080912F32E" name="CONTRATO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>12FC3505-C090-1685-DAE8-1707A7D0833A</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contrato" id="73E34E67-4161-2F36-1412-5339F9621B98">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>A520A24B-BCE5-15E6-F0C0-0DA3C41F615D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="ED5844CF-827B-7256-9718-F1BADD6C2966">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>F422AEA5-2132-6B6B-0F62-1900729E7239</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_termino" id="310F333C-AA61-B912-1ACA-E0959D1DD909">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>DA5A5BEC-79F2-2B77-4A16-A05ED8F8754F</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_financiamiento" id="42C404EA-8759-94C4-E01E-090C0AE4E2F1">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>BC21651B-2412-6B79-F51C-C082B3960BA8</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_apoderado" id="0673C975-4A1B-19E7-BF79-828EE0F1659A">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>8C106FBE-2E9D-EF6C-1185-57A039CD0EB1</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APODERADO_rut_apoderado" id="415D5AAF-6B07-97A2-DE82-60B63A900B0B">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>31336F8B-069E-3BC7-99B1-B5B851F5FD05</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98923BBB-FB9F-0185-8E47-80005E6DF542" referredColumn="1E0B9076-36BA-1D1E-C491-08D73B7E6969"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF3FE6B3-9354-EDED-79E9-0017D6F3E153" name="CONTRATO_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>2A641732-C47F-C773-73BB-C33194149B73</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73E34E67-4161-2F36-1412-5339F9621B98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA610904-E2DB-0C9A-FF6B-3D2466DBAB9D" name="CONTRATO_APODERADO_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>24737457-1E40-7233-39C7-AFF5C48E35E3</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="415D5AAF-6B07-97A2-DE82-60B63A900B0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

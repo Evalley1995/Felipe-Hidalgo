@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4A6CB91-300E-8A53-A1DD-5F94765F7EB0" name="PERSONAL">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>242D1475-FB92-B2A4-FC88-ADDBBE1DFAF0</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_personal" id="BB844AAA-7E82-9D59-F945-A5C233C74508">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>6ADA2162-5ACF-1FF4-D7E6-77EC9958887D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="DBAE6DF0-63A0-28F5-DBE4-AD7CE858CFDD">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>FBF77235-0857-2E6A-6086-921F64123DD9</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="8A48B95A-B585-8E26-4851-1F8481133875">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>E13BCFFA-D52E-76E7-EE9B-0D53E921B30F</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_residencia" id="097DC8D0-9D49-2C0D-E4DA-B79A7EE56CD5">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>C3DCB26B-E389-7623-DC5D-A6EFCABEF7B8</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESIDENCIA_id_residencia" id="26A0B965-E3BB-D8BF-1977-B18CD6438635">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>72AFC166-D9D8-7750-CCB6-4135A39CA9E1</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFA374BD-3F01-99EE-4223-DC1CB0B1BAAE" referredColumn="948A5503-CAC1-0369-EC2A-8DCD722DF6BB"/>
+</associations>
+</Column>
+<Column name="CUIDADOR_rut_personal_1" id="BC297417-5D17-E951-4061-C80B09BF0ABD">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>69A4B4E9-BB71-926A-E90B-2561BC7F7B11</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD7C999A-7D65-9EF2-9654-7D17F0572683" referredColumn="FD9D67D5-0390-3A07-C9BC-7CD3A92CF270"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89DDFFE4-CA18-9726-0D6E-5A976B66F5AA" name="PERSONAL_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:22:06 UTC</createdTime>
+<generatorID>0E24448D-4382-3C33-49E0-86E98829ADDF</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB844AAA-7E82-9D59-F945-A5C233C74508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BEAA472-EEBA-CC57-BAA9-A8B9C0657E59" name="PERSONAL__IDX">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>10477150-407E-39AA-3F30-BF6426E53F3D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BC297417-5D17-E951-4061-C80B09BF0ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E6A5ADD-AD5E-6416-4DA9-B1C3CED3B6AC" name="PERSONAL_RESIDENCIA_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:47:43 UTC</createdTime>
+<generatorID>6D5C7284-9AC5-2F19-66A8-F43A945FF5CB</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26A0B965-E3BB-D8BF-1977-B18CD6438635"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0C02A3F-1743-F16F-9CC6-1B8EC4A1E1E7" name="PERSONAL_CUIDADOR_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-01 05:49:47 UTC</createdTime>
+<generatorID>10477150-407E-39AA-3F30-BF6426E53F3D</generatorID>
+<ownerDesignName>modelo base</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC297417-5D17-E951-4061-C80B09BF0ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
