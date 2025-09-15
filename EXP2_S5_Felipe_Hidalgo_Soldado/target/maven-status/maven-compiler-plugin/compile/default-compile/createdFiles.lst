@@ -1,0 +1,17 @@
+view\ProductoView.class
+command\ListarInventarioCommand.class
+model\Inventario.class
+command\AjustarStockCommand.class
+controller\InventarioController.class
+model\Producto.class
+view\MenuView.class
+com\mycompany\main\Main.class
+command\Command.class
+view\InventarioView.class
+command\BuscarPorNombreCommand.class
+command\ActualizarPrecioCommand.class
+command\BuscarPorCodigoCommand.class
+command\AgregarProductoCommand.class
+command\GenerarInformeCommand.class
+command\EliminarProductoCommand.class
+controller\MenuController.class
