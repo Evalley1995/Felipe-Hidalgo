@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70E95D47-9E5D-F364-04F3-D153D4B3B52D" name="ATENCION_MEDICA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>9922B840-1213-FB76-6157-C9A24F7C7B44</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_atencion" id="081231D4-2873-1A21-DE34-BA5EBB0ABAF9">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>E7005C2D-79F5-6C53-5665-87647095D3B9</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="37297B22-266E-1857-5362-47B19D872BF5">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>B4C0EC47-01E4-7B23-108A-3EF4FAF956FE</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="2DB1B8F3-8211-2DB6-2D5C-CDF0BF3D1D64">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>646B3A7D-501A-F22A-6AF8-C815030C0951</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="5D1BCC95-5F38-B899-775C-8015D74C9ADB">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>39E2813B-C3D2-F10D-0DB1-488DDDCC66A3</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnostico" id="0A8F6BF0-9990-8F9D-639E-2ACFDEB8B454">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>392F790A-4E2A-2775-F68A-BB7815B3D763</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_rut_paciente" id="75BD128B-313B-CF3B-F3EB-98D0FEBAF0CE">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>C46E3D69-83CB-32DE-2B14-8F76C364FE32</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58695B03-CC36-F6A4-6C74-CEC8FF6E3A24" referredColumn="8AB1231E-6786-C309-3CC3-C5F7E0D19347"/>
+</associations>
+</Column>
+<Column name="MEDICO_rut_medico" id="3889B05B-4788-29BA-6FF9-638B7AC84339">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>F5BA5E2E-EA69-633B-73FE-BC67ECF0C3C3</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF1F8F7B-30AD-25A8-269D-5A8E82B3A5D3" referredColumn="E840D2E0-AB3B-D7EC-57CA-D88AE62922C0"/>
+</associations>
+</Column>
+<Column name="PAGO_ATENCION_id_pago" id="D121AB5D-3F42-29A4-0393-EC6A0B25B8DD">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>370C23C6-031C-CB78-3184-BB85B38581E4</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C78F6E61-02A3-5C1C-F82D-B4A1D1C68300" name="ATENCION_MEDICA_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>1F25411A-4EF5-2556-6FD2-19B4EE5E701B</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="081231D4-2873-1A21-DE34-BA5EBB0ABAF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B4FE578-E3E2-0C43-7BE7-8A065FB987DE" name="ATENCION_MEDICA__IDX">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DBBF65C7-F41D-B276-644B-5E290DDAE921</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D121AB5D-3F42-29A4-0393-EC6A0B25B8DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="059355CF-B9FB-E3DD-5B8D-CA05DE63BD9E" name="ATENCION_MEDICA_PACIENTE_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>3F94152F-181F-9C3D-F620-4A816BB0E91B</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75BD128B-313B-CF3B-F3EB-98D0FEBAF0CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="802CC9B2-BB02-D4F7-8513-5954C968DB4C" name="ATENCION_MEDICA_MEDICO_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>1C07AB67-DF52-D7DB-6C75-EE18F26EDE58</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3889B05B-4788-29BA-6FF9-638B7AC84339"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

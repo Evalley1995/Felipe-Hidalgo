@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9A8F578-20A5-623A-387A-ACD2B1508E2A" name="EXAMEN_LABORATORIO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>7309427D-81AC-741B-680C-7C4A3E052CBE</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_examen" id="E8D5936F-EF91-1C9D-F8DF-CDA1E9FC5E94">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>87403E3F-CFE4-66E5-9B75-8803EE6DE3D8</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E0E4F08B-B99C-1469-0348-234BB72B90EC">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>68C35EA1-18E2-258F-1C5E-1C399C5CC3DB</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<constraintName>UK_EXAMEN_LABORATORIO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nombre &gt; 50"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_muestra" id="6E115ECD-005F-18D5-09DD-862BB722652D">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>35695349-84FF-20EF-C99B-E05590F7BB36</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="condiciones" id="BC722399-2A86-AAFD-BF4A-E9AA98ABB34C">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>6FF4FE24-9ACA-2C11-5194-F5C0187FEDF6</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_rut_paciente" id="6C2585B0-1F17-AFC8-3362-804AD704E945">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>5A821FB4-21E9-832B-E74E-43676240C030</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F43466CC-0B70-EF35-622E-8267C54E77E7" referredColumn="8AB1231E-6786-C309-3CC3-C5F7E0D19347"/>
+</associations>
+</Column>
+<Column name="MEDICO_rut_medico" id="CA6AFA2B-CF6B-121F-5CD5-159AF3F5F54E">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>FB84BB11-C1CA-39FA-D0DB-C14A4A7D5AA7</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDE87C37-C865-7F7C-D018-E7B420CBF5D9" referredColumn="E840D2E0-AB3B-D7EC-57CA-D88AE62922C0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29ECF4A4-EA8A-EFFD-B992-B09FEC0E96EA" name="EXAMEN_LABORATORIO_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>4E27B53C-FCEC-67ED-FE5C-24A4A46D70EF</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8D5936F-EF91-1C9D-F8DF-CDA1E9FC5E94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="506B9584-5308-D360-9446-E565B0D91AF6" name="EXAMEN_LABORATORIO_nombre_UN">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 03:45:49 UTC</createdTime>
+<generatorID>C2903051-F46E-B73F-0AA0-7B446C40BB41</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0E4F08B-B99C-1469-0348-234BB72B90EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B076A89-72BA-0159-BEA4-07B589CD7271" name="EXAMEN_LABORATORIO_PACIENTE_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>7F2E99D9-890A-E45C-767B-8347806C6B5C</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C2585B0-1F17-AFC8-3362-804AD704E945"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AD3D341-904E-5E6C-B6B1-7394C803B486" name="EXAMEN_LABORATORIO_MEDICO_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>F6954ABB-EFF0-C844-42FA-97C220E8D269</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA6AFA2B-CF6B-121F-5CD5-159AF3F5F54E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

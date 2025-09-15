@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8136469C-BCA1-1973-5C6E-57CC4FC74B95" name="COMUNA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:05:24 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comuna" id="7B860DCB-D880-8B8F-BF32-54EF305BE122">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:05:36 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="E907D41C-D6D1-CDFF-2570-15D6FDA3B9EF">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:05:36 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="BA07043B-0282-F2E8-D247-2C7B1881A0DA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:28:39 UTC</createdTime>
+<generatorID>6F264CA7-647A-59B2-21E9-205C515676A7</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>53CAE845-001A-F2D7-5042-1BE08EE143A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="086406DE-7F1D-3C4B-7482-33CCD79DCC7F" name="COMUNA PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:06:03 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B860DCB-D880-8B8F-BF32-54EF305BE122</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8D027F65-284E-EB41-EF2D-B335BED9E9FE" name="UK_nombre">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 05:47:45 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<newElementsIDs>E907D41C-D6D1-CDFF-2570-15D6FDA3B9EF</newElementsIDs>
+<usedAttributes>
+<attributeRef>E907D41C-D6D1-CDFF-2570-15D6FDA3B9EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

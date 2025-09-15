@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="689C7C97-3F26-364F-5D67-A21DBEFF4C1F" name="PACIENTE">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>3F5528E6-DF12-F7F5-5219-87598E69CD5D</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_paciente" id="8AB1231E-6786-C309-3CC3-C5F7E0D19347">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>E4F62027-2A04-3C78-5A14-585DF8BF74B1</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E54178E3-2629-0700-A659-EA1588C7F5C7">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>5FA91309-9E42-A3F2-C58D-478BCEB23945</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="BD521846-2E24-8ACE-4BAE-5DAA9529EC2F">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>60ADE45D-AAC4-74A1-0246-0E4EEA3A83ED</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="F27435A7-BA80-CD36-F1B3-BCE21A307B5F">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>160D3291-9B9C-F4EF-6984-B5B786ED2EC4</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="62DE8E07-9725-94F6-D294-C98AA0212020">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>0CD978B9-72CE-C7AD-336F-B3AF7CA6B839</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A3DEED7-A5CF-5D62-1C53-F2949E2BB0DE" name="PACIENTE_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:02:00 UTC</createdTime>
+<generatorID>00B4F08A-0F3D-27B7-BFE3-3EE404766A93</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AB1231E-6786-C309-3CC3-C5F7E0D19347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

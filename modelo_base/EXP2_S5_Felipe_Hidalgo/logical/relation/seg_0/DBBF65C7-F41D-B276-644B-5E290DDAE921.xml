@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="DBBF65C7-F41D-B276-644B-5E290DDAE921">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:07:57 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<sourcePk>1F25411A-4EF5-2556-6FD2-19B4EE5E701B</sourcePk>
+<targetPk>AE6A5B85-D3B8-0716-3962-B230279D587C</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9922B840-1213-FB76-6157-C9A24F7C7B44</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6D66317E-7577-1E50-D8EE-D3EF75A7820A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

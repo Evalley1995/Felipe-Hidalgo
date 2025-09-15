@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="AD6A2369-5AA9-2C5C-8296-BCAE0736050F" mainViewID="1A4370F6-D685-10B0-D40A-225098D14EBA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 01:52:47 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

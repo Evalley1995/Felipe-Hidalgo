@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F43466CC-0B70-EF35-622E-8267C54E77E7" containerWithKeyObject="F9A8F578-20A5-623A-387A-ACD2B1508E2A" localFKIndex="6B076A89-72BA-0159-BEA4-07B589CD7271" name="EXAMEN_LABORATORIO_PACIENTE_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>7F2E99D9-890A-E45C-767B-8347806C6B5C</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<referredTableLongName>PACIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>689C7C97-3F26-364F-5D67-A21DBEFF4C1F</referredTableID>
+<keyObject>7A3DEED7-A5CF-5D62-1C53-F2949E2BB0DE</keyObject>
+<referredKeyID>7A3DEED7-A5CF-5D62-1C53-F2949E2BB0DE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_paciente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

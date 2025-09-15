@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0DB4A1D-99D2-D830-57A6-F5930DCD6F7D" name="COMUNA">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>8136469C-BCA1-1973-5C6E-57CC4FC74B95</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comuna" id="2E334AB7-AFA9-4B07-F69C-95249A581881">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>7B860DCB-D880-8B8F-BF32-54EF305BE122</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="D2AC3796-008B-FCB9-7BB1-CA60481C2B16">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>E907D41C-D6D1-CDFF-2570-15D6FDA3B9EF</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_id_region" id="A34A5C46-726D-1C4D-3B2C-D6581BD2955E">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>BA07043B-0282-F2E8-D247-2C7B1881A0DA</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3449804E-CD89-E3BD-60BE-B456566E2C76" referredColumn="036DF2E5-19EE-8BBA-FF0A-38C3D718B841"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17A5F751-435F-CC74-C306-57F30CC4B4DF" name="COMUNA_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>086406DE-7F1D-3C4B-7482-33CCD79DCC7F</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E334AB7-AFA9-4B07-F69C-95249A581881"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE58EF32-8E38-02CA-457D-0B32F8F88C5C" name="COMUNA_REGION_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>6F264CA7-647A-59B2-21E9-205C515676A7</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A34A5C46-726D-1C4D-3B2C-D6581BD2955E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

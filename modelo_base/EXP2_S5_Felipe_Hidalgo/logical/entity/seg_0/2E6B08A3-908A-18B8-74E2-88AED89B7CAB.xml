@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E6B08A3-908A-18B8-74E2-88AED89B7CAB" name="REGION">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:23:18 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_region" id="53CAE845-001A-F2D7-5042-1BE08EE143A5">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:23:30 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="B2319ED9-0FB1-3B24-985F-D8D269B04B2B">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:23:30 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FB578C57-4BEA-5262-00B6-EFFA1EC5053A" name="REGION PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 03:23:55 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53CAE845-001A-F2D7-5042-1BE08EE143A5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BAF9B6E6-8F69-BC45-A3DF-302096C5DCE7" name="UK_nombre">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 05:48:26 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<newElementsIDs>B2319ED9-0FB1-3B24-985F-D8D269B04B2B</newElementsIDs>
+<usedAttributes>
+<attributeRef>B2319ED9-0FB1-3B24-985F-D8D269B04B2B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

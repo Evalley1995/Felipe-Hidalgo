@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E26799CA-C802-0F46-38D0-04FB02B94BC0" name="MEDICO">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 04:05:00 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_medico" id="FF71F3AB-1D78-33DA-F0F5-2E4E5219BBC8">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 04:05:17 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="C2AA8824-7095-6B94-77AB-DAC2322EA1BB">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 04:05:17 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="9F7228EA-7AAB-6ED8-B2D4-8599F275B7B9">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 04:05:17 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_especialidad" id="3B61623D-E035-C0F1-AEC9-73FD05050AA3">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:13:51 UTC</createdTime>
+<generatorID>197798CE-BEF2-EE30-7628-47DAE5B27805</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<referedAttribute>EA3BB883-8E06-2B9F-4E3A-C6FC730EE140</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_afp" id="5C186AD1-F19B-AB92-E992-581FD96A51A4">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:16:21 UTC</createdTime>
+<generatorID>10ECA89B-BC67-9FA2-574B-088B437D45C2</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<referedAttribute>16AF3CF5-643A-9E18-27AF-FED8C4C85FBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_medico1" id="3EC050A4-7716-E40B-C5F9-ED397A297A4D">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:23:47 UTC</createdTime>
+<generatorID>1355329D-CE16-AFDD-EBFA-B6A9C08A88FA</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="true"/>
+</engineerTo>
+<referedAttribute>FF71F3AB-1D78-33DA-F0F5-2E4E5219BBC8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62B83AFE-223D-4416-426B-C9D5530AF30C" name="MEDICO PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 04:36:58 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CC6DF392-2F15-DF9E-23E9-952DA7E2A230" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF71F3AB-1D78-33DA-F0F5-2E4E5219BBC8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

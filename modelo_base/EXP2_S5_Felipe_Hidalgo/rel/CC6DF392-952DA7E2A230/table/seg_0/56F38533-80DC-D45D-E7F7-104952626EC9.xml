@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56F38533-80DC-D45D-E7F7-104952626EC9" name="INSTITUCION_SALUD">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>08500CE8-992C-074C-D82D-885F2CFD0924</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_institucion" id="B0F8BC84-5386-E6C3-DC26-DCC3197860E2">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>DACCDE4E-1D44-287C-A892-DB253004AA23</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="2C9172D2-8701-01E8-64EB-213824F75B68">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>7C9C405E-0B0F-F93A-643A-6E867052F6AC</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDICO_rut_medico" id="D8E296AF-D6D0-369C-BE17-8B1DF632F357">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>AA3E263A-3C71-AADD-EF4D-B09A39E22561</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94E5E362-9EF6-2018-5C40-7FA971C9BC58" referredColumn="E840D2E0-AB3B-D7EC-57CA-D88AE62922C0"/>
+</associations>
+</Column>
+<Column name="COMUNA_id_comuna" id="607F6570-B070-A6F7-EFBB-F87F6A8143D2">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>5B43DBC0-AD32-09F9-3800-765C31FBDAB2</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17A6276F-46B9-7F41-B9F0-C5B17617A1E0" referredColumn="2E334AB7-AFA9-4B07-F69C-95249A581881"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3BF3641-A5D6-5794-B529-37518C5020A9" name="INSTITUCION_SALUD_PK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 05:16:32 UTC</createdTime>
+<generatorID>20400EE5-1C98-FAEC-5643-AABA1663CD5A</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0F8BC84-5386-E6C3-DC26-DCC3197860E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9283CA26-2EF0-E5A9-1B7D-16978879EC5A" name="INSTITUCION_SALUD_MEDICO_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>C55FCDF7-C00E-CAD5-8D4A-F036B27DF2DB</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8E296AF-D6D0-369C-BE17-8B1DF632F357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B81AF746-411D-62E0-A76F-DEFD9C958BC7" name="INSTITUCION_SALUD_COMUNA_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>E70255EF-BF5C-2A66-4B9A-C45FCFDFC878</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="607F6570-B070-A6F7-EFBB-F87F6A8143D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

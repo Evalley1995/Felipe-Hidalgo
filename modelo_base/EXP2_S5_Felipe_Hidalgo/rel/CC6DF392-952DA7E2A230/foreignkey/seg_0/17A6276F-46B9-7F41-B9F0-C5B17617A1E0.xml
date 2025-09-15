@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17A6276F-46B9-7F41-B9F0-C5B17617A1E0" containerWithKeyObject="56F38533-80DC-D45D-E7F7-104952626EC9" localFKIndex="B81AF746-411D-62E0-A76F-DEFD9C958BC7" name="INSTITUCION_SALUD_COMUNA_FK">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-14 02:35:40 UTC</createdTime>
+<generatorID>E70255EF-BF5C-2A66-4B9A-C45FCFDFC878</generatorID>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<referredTableLongName>COMUNA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B0DB4A1D-99D2-D830-57A6-F5930DCD6F7D</referredTableID>
+<keyObject>17A5F751-435F-CC74-C306-57F30CC4B4DF</keyObject>
+<referredKeyID>17A5F751-435F-CC74-C306-57F30CC4B4DF</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_comuna</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

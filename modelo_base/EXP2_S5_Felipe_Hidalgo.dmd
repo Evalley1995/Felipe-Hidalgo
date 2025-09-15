@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="EXP2_S5_Felipe_Hidalgo" id="56EE52B1-32A6-A51F-AD1F-7B510FDCEEEF" version="3.5">
+<createdBy>pipe-</createdBy>
+<createdTime>2025-09-13 01:52:46 UTC</createdTime>
+<ownerDesignName>EXP2_S5_Felipe_Hidalgo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>56EE52B1-32A6-A51F-AD1F-7B510FDCEEEF</designId>
+</OSDM_Design>
