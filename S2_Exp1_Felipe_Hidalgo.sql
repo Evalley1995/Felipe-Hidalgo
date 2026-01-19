@@ -50,7 +50,7 @@ BEGIN
   ) LOOP
     v_cont_emp := v_cont_emp + 1;
 
-    /* PL/SQL: años trabajando (entero) */
+    /* PL/SQL: aÃ±os trabajando (entero) */
     v_annos_trab := TRUNC(MONTHS_BETWEEN(v_fecha_proceso, r.fecha_contrato) / 12);
 
     /* PL/SQL: nombre empleado */
@@ -59,7 +59,7 @@ BEGIN
             NVL(r.snombre_emp || ' ', '') ||
             r.appaterno_emp || ' ' || r.apmaterno_emp));
 
-    /* PL/SQL: nombre usuario según reglas */
+    /* PL/SQL: nombre usuario segÃºn reglas */
     v_nombre_usuario :=
         LOWER(SUBSTR(r.nombre_estado_civil, 1, 1)) ||
         UPPER(SUBSTR(r.pnombre_emp, 1, 3)) ||
@@ -72,7 +72,7 @@ BEGIN
       v_nombre_usuario := v_nombre_usuario || 'X';
     END IF;
 
-    /* PL/SQL: 2 letras del apellido según estado civil */
+    /* PL/SQL: 2 letras del apellido segÃºn estado civil */
     IF UPPER(r.nombre_estado_civil) IN ('CASADO', 'ACUERDO DE UNION CIVIL') THEN
       v_letras_ap := LOWER(SUBSTR(r.appaterno_emp, 1, 2));
     ELSIF UPPER(r.nombre_estado_civil) IN ('DIVORCIADO', 'SOLTERO') THEN
@@ -87,14 +87,14 @@ BEGIN
 
     v_sueldo_menos1 := r.sueldo_base - 1;
 
-    /* PL/SQL: clave usuario según reglas */
+    /* PL/SQL: clave usuario segÃºn reglas */
     v_clave_usuario :=
-        SUBSTR(TO_CHAR(r.numrun_emp), 3, 1) ||
-        (EXTRACT(YEAR FROM r.fecha_nac) + 2) ||
-        SUBSTR(TO_CHAR(v_sueldo_menos1), -3) ||
-        v_letras_ap ||
-        r.id_emp ||
-        TO_CHAR(v_fecha_proceso, 'MMYYYY');
+    SUBSTR(TO_CHAR(r.numrun_emp), 3, 1) ||
+    (TO_NUMBER(TO_CHAR(r.fecha_nac,'YYYY')) + 2) ||
+    SUBSTR(TO_CHAR(v_sueldo_menos1), -3) ||
+    v_letras_ap ||
+    r.id_emp ||
+    TO_CHAR(v_fecha_proceso, 'MMYYYY');
 
     /* SQL #3: INSERT resultado */
     INSERT INTO USUARIO_CLAVE (id_emp, numrun_emp, dvrun_emp, nombre_empleado, nombre_usuario, clave_usuario)
@@ -113,3 +113,4 @@ END;
 SELECT *
 FROM USUARIO_CLAVE
 ORDER BY id_emp;
+
