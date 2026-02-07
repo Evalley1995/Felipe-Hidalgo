@@ -1,19 +1,8 @@
 /* ============================================================
-   CASO SBIF: Avances y S˙per Avances con aporte al fondo SEF
-   BLOQUE PL/SQL AN”NIMO (sin modificar tablas ni poblamiento)
-
-   Nota importante sobre ìorden almacenadoî:
-   - En bases de datos, el orden fÌsico de una tabla NO est· garantizado.
-   - Por pauta (e) y (f), el orden se asegura:
-       1) recorriendo cursores con ORDER BY
-       2) mostrando evidencia con SELECT ... ORDER BY al final del script.
-
-   Nota importante sobre el aÒo SBIF:
-   - Seg˙n anexo, si se envÌa en enero del aÒo N, se informan transacciones del aÒo N-1.
-   - Por eso, :b_periodo representa el aÒo de envÌo/ejecuciÛn, y se procesa (b_periodo - 1).
+   CASO 1
    ============================================================ */
 
--- (n) VARIABLE BIND: aÒo de envÌo/ejecuciÛn (enero del aÒo N)
+-- VARIABLE BIND: a√±o de env√≠o/ejecuci√≥n (enero del a√±o N)
 VARIABLE b_periodo NUMBER;
 EXEC :b_periodo := 2026;
 
@@ -21,25 +10,25 @@ SET SERVEROUTPUT ON;
 
 DECLARE
     -------------------------------------------------------------------------
-    -- (n) AÒo de envÌo/ejecuciÛn (bind) y aÒo real de transacciones a procesar
+    -- A√±o de env√≠o/ejecuci√≥n (bind) y a√±o real de transacciones a procesar
     -------------------------------------------------------------------------
     v_anno_envio    NUMBER := :b_periodo;
-    v_periodo       NUMBER := :b_periodo - 1; -- aÒo de transacciones (SBIF: N-1)
+    v_periodo       NUMBER := :b_periodo - 1; -- a√±o de transacciones (SBIF: N-1)
 
     -------------------------------------------------------------------------
-    -- (k) VARRAY tipos de transacciÛn a informar
+    -- VARRAY tipos de transacci√≥n a informar
     -------------------------------------------------------------------------
     TYPE t_tipos_trx IS VARRAY(2) OF VARCHAR2(50);
     v_tipos t_tipos_trx := t_tipos_trx('Avance en Efectivo', 'Super Avance en Efectivo');
 
     -------------------------------------------------------------------------
-    -- (m) Contadores: COMMIT solo si se procesan todos los registros
+    -- Contadores: COMMIT solo si se procesan todos los registros
     -------------------------------------------------------------------------
     v_total_registros  NUMBER := 0;
     v_iteraciones      NUMBER := 0;
 
     -------------------------------------------------------------------------
-    -- (h) Variables de c·lculo de aporte (en PL/SQL)
+    -- Variables de c√°lculo de aporte (en PL/SQL)
     -------------------------------------------------------------------------
     v_porc_aporte NUMBER := 0;
     v_aporte      NUMBER := 0;
@@ -58,7 +47,7 @@ DECLARE
     v_cnt_sav        NUMBER := 0;
 
     -------------------------------------------------------------------------
-    -- (j) EXCEPCIONES (3)
+    --  EXCEPCIONES (3)
     -------------------------------------------------------------------------
     e_sin_registros EXCEPTION; -- usuario
     e_tabla_no_existe EXCEPTION; -- no predefinida
@@ -67,10 +56,10 @@ DECLARE
     e_tramo_no_encontrado EXCEPTION; -- usuario (derivada de NO_DATA_FOUND)
 
     -------------------------------------------------------------------------
-    -- (b)(c) CURSORES EXPLÕCITOS (uno con par·metro)
+    --  CURSORES EXPL√çCITOS (uno con par√°metro)
     -------------------------------------------------------------------------
 
-    -- Cursor 1: meses del aÒo a procesar (orden ascendente por mes)
+    -- Cursor 1: meses del a√±o a procesar (orden ascendente por mes)
     CURSOR c_meses IS
         SELECT DISTINCT TO_NUMBER(TO_CHAR(t.fecha_transaccion, 'MM')) AS mes
         FROM transaccion_tarjeta_cliente t
@@ -111,19 +100,19 @@ DECLARE
 
 BEGIN
     -------------------------------------------------------------------------
-    -- Evidencia de aÒo usado (evita confusiÛn de pauta SBIF)
+    -- Evidencia de a√±o usado
     -------------------------------------------------------------------------
-    DBMS_OUTPUT.PUT_LINE('AÒo de envÌo/ejecuciÛn (bind): ' || v_anno_envio);
-    DBMS_OUTPUT.PUT_LINE('AÒo de transacciones procesadas (SBIF N-1): ' || v_periodo);
+    DBMS_OUTPUT.PUT_LINE('A√±o de env√≠o/ejecuci√≥n (bind): ' || v_anno_envio);
+    DBMS_OUTPUT.PUT_LINE('A√±o de transacciones procesadas (SBIF N-1): ' || v_periodo);
 
     -------------------------------------------------------------------------
-    -- (g) TRUNCAR TABLAS DE SALIDA EN TIEMPO DE EJECUCI”N
+    --  TRUNCAR TABLAS DE SALIDA EN TIEMPO DE EJECUCI√ìN
     -------------------------------------------------------------------------
     EXECUTE IMMEDIATE 'TRUNCATE TABLE DETALLE_APORTE_SBIF';
     EXECUTE IMMEDIATE 'TRUNCATE TABLE RESUMEN_APORTE_SBIF';
 
     -------------------------------------------------------------------------
-    -- Contar total de transacciones del aÒo a procesar (av/sav)
+    -- Contar total de transacciones del a√±o a procesar (av/sav)
     -------------------------------------------------------------------------
     SELECT COUNT(*)
       INTO v_total_registros
@@ -154,8 +143,8 @@ BEGIN
             EXIT WHEN c_detalle%NOTFOUND;
 
             -----------------------------------------------------------------
-            -- (h) c·lculo aporte en PL/SQL
-            -- (j) predefinida: NO_DATA_FOUND (capturada y transformada)
+            --  c√°lculo aporte en PL/SQL
+            --  predefinida: NO_DATA_FOUND (capturada y transformada)
             -----------------------------------------------------------------
             BEGIN
                 SELECT porc_aporte_sbif
@@ -210,7 +199,7 @@ BEGIN
     END LOOP;
 
     -------------------------------------------------------------------------
-    -- (m) COMMIT solo si terminÛ correctamente y procesÛ todo
+    -- COMMIT solo si termin√≥ correctamente y proces√≥ todo
     -------------------------------------------------------------------------
     IF v_iteraciones = v_total_registros THEN
         COMMIT;
@@ -222,7 +211,7 @@ BEGIN
 
 EXCEPTION
     WHEN e_sin_registros THEN
-        DBMS_OUTPUT.PUT_LINE('No existen avances/s˙per avances para el aÒo de transacciones ' || v_periodo || '.');
+        DBMS_OUTPUT.PUT_LINE('No existen avances/s√∫per avances para el a√±o de transacciones ' || v_periodo || '.');
         ROLLBACK;
 
     WHEN e_tramo_no_encontrado THEN
@@ -239,7 +228,7 @@ EXCEPTION
 END;
 /
 --------------------------------------------------------------------------------
--- SELECTS DE VALIDACI”N / EVIDENCIA (orden solicitado en pauta)
+-- SELECTS DE VALIDACI√ìN / EVIDENCIA 
 --------------------------------------------------------------------------------
 SELECT numrun, dvrun, nro_tarjeta, nro_transaccion, fecha_transaccion, tipo_transaccion,
        monto_transaccion AS monto_total_transaccion, aporte_sbif
