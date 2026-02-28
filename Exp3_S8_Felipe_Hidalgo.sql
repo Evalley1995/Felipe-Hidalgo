@@ -12,7 +12,7 @@ ALTER USER PRY2206_PRUEBA3 DEFAULT ROLE RESOURCE;
 
 SET SERVEROUTPUT ON;
 
--- Drop del trigger si existe (evita error si no está creado)
+-- Drop del trigger si existe (evita error si no estÃ¡ creado)
 BEGIN
   EXECUTE IMMEDIATE 'DROP TRIGGER tr_act_total_consumos';
 EXCEPTION
@@ -56,7 +56,7 @@ BEGIN
          SET monto_consumos = NVL(monto_consumos,0) + (NVL(:NEW.monto,0) - NVL(:OLD.monto,0))
        WHERE id_huesped = :NEW.id_huesped;
     ELSE
-      -- si cambia huésped, rebaja al anterior y suma al nuevo
+      -- si cambia huÃ©sped, rebaja al anterior y suma al nuevo
       UPDATE total_consumos
          SET monto_consumos = NVL(monto_consumos,0) - NVL(:OLD.monto,0)
        WHERE id_huesped = :OLD.id_huesped;
@@ -79,7 +79,7 @@ BEGIN
 END;
 /
 ------------------------------------------------------------
--- BLOQUE ANÓNIMO DE PRUEBA 
+-- BLOQUE ANÃ“NIMO DE PRUEBA 
 ------------------------------------------------------------
 DECLARE
   v_nuevo_id consumo.id_consumo%TYPE;
@@ -136,7 +136,7 @@ BEGIN
      SET monto = 95
    WHERE id_consumo = 10688;
 
-  -- Totales DESPUÉS
+  -- Totales DESPUÃ‰S
   SELECT monto_consumos INTO v_total_340006
     FROM total_consumos
    WHERE id_huesped = 340006;
@@ -157,7 +157,7 @@ BEGIN
 END;
 /
 ------------------------------------------------------------
--- CONSULTAS DE VERIFICACIÓN 
+-- CONSULTAS DE VERIFICACIÃ“N 
 ------------------------------------------------------------
 
 -- Ver detalle de los consumos involucrados
@@ -173,7 +173,7 @@ SELECT *
    AND id_reserva = 1587
  ORDER BY id_consumo DESC;
 
--- Ver totales de los huéspedes involucrados (al menos 340006 y los de 10688/11473)
+-- Ver totales de los huÃ©spedes involucrados (al menos 340006 y los de 10688/11473)
 SELECT *
   FROM total_consumos
  WHERE id_huesped IN (340006,
@@ -190,13 +190,13 @@ SELECT *
    - CASO 2 
    COBRANZA DIARIA
    - Package: PKG_TOURS
-   - Funciones: FN_AGENCIA (log a REG_ERRORES), FN_CONSUMOS (log)
+   - Funciones: FN_AGENCIA (REG_ERRORES), FN_CONSUMOS 
    - Aux: FN_ALOJAMIENTO_USD, FN_PERSONAS_RESERVA, FN_DESC_CONSUMOS_USD
    - Procedimiento: SP_COBRANZA_DIARIA -> llena DETALLE_DIARIO_HUESPEDES
    ========================================================= */
 
 --------------------------------------------------------------------------------
--- 1) PACKAGE: TOURS (USD)
+-- 1) PACKAGE: TOURS 
 --------------------------------------------------------------------------------
 CREATE OR REPLACE PACKAGE pkg_tours AS
   g_monto_tours NUMBER := 0; -- opcional
@@ -224,7 +224,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tours AS
       VALUES (
         sq_error.NEXTVAL,
         'PKG_TOURS.FN_MONTO_TOURS',
-        SUBSTR('Huésped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
+        SUBSTR('HuÃ©sped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
       );
 
       RETURN 0;
@@ -234,7 +234,7 @@ END pkg_tours;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 2) FUNCIÓN: FN_AGENCIA (con control + registro en REG_ERRORES)
+-- 2) FUNCIÃ“N: FN_AGENCIA (con control + registro en REG_ERRORES)
 --------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION fn_agencia(p_id_huesped NUMBER) RETURN VARCHAR2 IS
   v_agencia agencia.nom_agencia%TYPE;
@@ -253,7 +253,7 @@ EXCEPTION
     VALUES (
       sq_error.NEXTVAL,
       'FN_AGENCIA',
-      SUBSTR('No registra agencia | Huésped ' || p_id_huesped, 1, 300)
+      SUBSTR('No registra agencia | HuÃ©sped ' || p_id_huesped, 1, 300)
     );
     RETURN 'NO REGISTRA AGENCIA';
 
@@ -262,7 +262,7 @@ EXCEPTION
     VALUES (
       sq_error.NEXTVAL,
       'FN_AGENCIA',
-      SUBSTR('Huésped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
+      SUBSTR('HuÃ©sped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
     );
     RETURN 'NO REGISTRA AGENCIA';
 END fn_agencia;
@@ -270,7 +270,7 @@ END fn_agencia;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 3) FUNCIÓN: FN_CONSUMOS (USD) desde TOTAL_CONSUMOS (con log)
+-- 3) FUNCIÃ“N: FN_CONSUMOS desde TOTAL_CONSUMOS
 --------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION fn_consumos(p_id_huesped NUMBER) RETURN NUMBER IS
   v_monto total_consumos.monto_consumos%TYPE;
@@ -288,7 +288,7 @@ EXCEPTION
     VALUES (
       sq_error.NEXTVAL,
       'FN_CONSUMOS',
-      SUBSTR('No registra consumos (TOTAL_CONSUMOS) | Huésped ' || p_id_huesped, 1, 300)
+      SUBSTR('No registra consumos (TOTAL_CONSUMOS) | HuÃ©sped ' || p_id_huesped, 1, 300)
     );
     RETURN 0;
 
@@ -297,7 +297,7 @@ EXCEPTION
     VALUES (
       sq_error.NEXTVAL,
       'FN_CONSUMOS',
-      SUBSTR('Huésped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
+      SUBSTR('HuÃ©sped ' || p_id_huesped || ' | ' || SQLERRM, 1, 300)
     );
     RETURN 0;
 END fn_consumos;
@@ -305,7 +305,7 @@ END fn_consumos;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 4) AUX: ALOJAMIENTO (USD)
+-- 4) AUX: ALOJAMIENTO 
 --------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION fn_alojamiento_usd(p_id_reserva NUMBER) RETURN NUMBER IS
   v_aloj NUMBER;
@@ -333,7 +333,7 @@ END fn_alojamiento_usd;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 5) AUX: PERSONAS por RESERVA (estimación por tipo habitación)
+-- 5) AUX: PERSONAS por RESERVA (estimaciÃ³n por tipo habitaciÃ³n)
 --------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION fn_personas_reserva(p_id_reserva NUMBER) RETURN NUMBER IS
   v_personas NUMBER;
@@ -374,7 +374,7 @@ END fn_personas_reserva;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 6) AUX: DESCUENTO por CONSUMOS (USD) según TRAMOS_CONSUMOS
+-- 6) AUX: DESCUENTO por CONSUMOS segÃºn TRAMOS_CONSUMOS
 --------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION fn_desc_consumos_usd(p_consumos NUMBER) RETURN NUMBER IS
   v_pct tramos_consumos.pct%TYPE;
@@ -430,17 +430,17 @@ CREATE OR REPLACE PROCEDURE sp_cobranza_diaria(
 
 BEGIN
   IF p_tipo_cambio IS NULL OR p_tipo_cambio <= 0 THEN
-    RAISE_APPLICATION_ERROR(-20001, 'Tipo de cambio inválido.');
+    RAISE_APPLICATION_ERROR(-20001, 'Tipo de cambio invÃ¡lido.');
   END IF;
 
-  -- Limpieza (según enunciado)
+  -- Limpieza 
   DELETE FROM detalle_diario_huespedes;
   DELETE FROM reg_errores;
   COMMIT;
 
   FOR r IN c_reservas LOOP
     BEGIN
-      -- Nombre huésped
+      -- Nombre huÃ©sped
       SELECT (h.appat_huesped || ' ' || h.apmat_huesped || ', ' || h.nom_huesped)
         INTO v_nombre
         FROM huesped h
@@ -451,16 +451,14 @@ BEGIN
       v_consum_usd := fn_consumos(r.id_huesped);
       v_tours_usd  := pkg_tours.fn_monto_tours(r.id_huesped);
 
-      -- Alojamiento USD
+      -- Alojamiento 
       v_aloj_usd := fn_alojamiento_usd(r.id_reserva);
 
-      -- Personas: 35.000 CLP por persona => USD
+      -- Personas: 35.000 CLP por persona 
       v_personas := fn_personas_reserva(r.id_reserva);
       v_valor_personas_usd := (v_personas * 35000) / p_tipo_cambio;
 
-      -- Subtotal (USD)
-      -- Si tu pauta define “subtotal = alojamiento + consumos + valor_persona” (sin tours),
-      -- deja tours fuera aquí y súmalo en el total. Si quieres que tours esté en subtotal, suma acá:
+      -- Subtotal 
       v_subtotal_usd := v_aloj_usd + v_consum_usd + v_valor_personas_usd + v_tours_usd;
 
       -- Descuentos
@@ -497,7 +495,7 @@ BEGIN
         VALUES (
           sq_error.NEXTVAL,
           'SP_COBRANZA_DIARIA',
-          SUBSTR('Reserva ' || r.id_reserva || ' | Huésped ' || r.id_huesped || ' | ' || SQLERRM, 1, 300)
+          SUBSTR('Reserva ' || r.id_reserva || ' | HuÃ©sped ' || r.id_huesped || ' | ' || SQLERRM, 1, 300)
         );
        
     END;
@@ -512,7 +510,7 @@ END sp_cobranza_diaria;
 SHOW ERRORS;
 
 --------------------------------------------------------------------------------
--- 8) EJECUCIÓN 
+-- 8) EJECUCIÃ“N 
 --------------------------------------------------------------------------------
 BEGIN
   sp_cobranza_diaria(TO_DATE('18/08/2021','DD/MM/YYYY'), 915);
