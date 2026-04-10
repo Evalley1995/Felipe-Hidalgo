@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../Downloads/_LearningPlatform"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
